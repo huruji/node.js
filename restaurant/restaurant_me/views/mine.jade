@@ -1,0 +1,62 @@
+doctype
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, inital-scale=1.0,maximum-scale=1.0,user-scalable=no")
+		meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
+		title 乐餐吧———登陆
+		link(href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet")
+		link(href="/stylesheets/style.css" rel="stylesheet" type="text/css")
+		script(type="text/javascript" src="/javascripts/browserChecker.js")
+	body(style="font-size:12px")
+		.container
+			div.row(style="margin-top:5px")
+				div.col-lg-4.col-md-4.col-sm-12.col-xs-12.hidden-sm.hidden-xs
+				div.col-lg-4.col-md-4.col-sm-12.col-xs-12
+					div.panel.panel-default
+						div.panel-heading
+							div.h1.text-center
+						div.text-align
+							div.common_item
+								img#icon.img-circle.common_item_left(src="/images/user_default_icon.png")
+								div.common_item_right(style="height: 70px; line-height:10px; vertical-align: middle")
+									div#name.common_item_right_title.text-left.h1
+									div#telephone.common_item_right_title
+						ul.list-group
+							li.list-group-item
+								a(href="mine/change-password")
+									div.common_item(style="display: block")
+										img.img-circle.common_item_left(src="/images/ic_qq_normal.png" style="width: 30px; height: 30px")
+										div.common_item_right(style="height: 20px; line-height:20px; vertical-align: middle")
+											div.common_item_right_title.text-left 修改密码
+										img.img-circle.pull-right(src="/images/arrow_right_normal.png")
+							li.list-group-item
+								a(href="/order/mine")
+									div.common_item(style="display:block")
+										img.img-circle.common_item_left(src="/images/ic_weixin_normal.png",style="width: 30px; height: 30px")
+										div.common_item_right(style="height: 20px; line-height:20px; vertical-align: middle")
+											div.common_item_right_title.text-left 我的订单
+										div.pull-right
+											span(style="font-size:10px") 只显示今日订单
+											img.img-circle(src="/images/arrow_right_normal.png")
+							li.lidt-group-item
+								a(href="order/all")
+									div.common_item(style="display:block")
+										img.img-circle.common_item_left(style="width: 30px; height: 30px",src="/images/ic_weixin_normal.png")
+										div.common_item_right(style="height: 20px; line-height:20px; vertical-align: middle")
+											div.common_item_right_title.text-left 所有订单
+										div.pull-right
+											img.img-circle(src="/images/arrow_right_normal.png")
+							li.list-group-item
+								a(href="/about2")
+									div.common_item(style="display:block")
+										img.img-circle.common_item_left(src="/images/ic_weixin_normal.png")
+										div.common_item_right(style="height: 20px; line-height:20px; vertical-align: middle")
+											div.common_item_right_title.text-left 关于
+										div.pull-right
+											img.img-circle(src="/images/arrow_right_normal.png")
+				div.col-lg-4.col-md-4.col-sm-12.col-xs-12.hidden-sm.hidden-xs
+		script(src="bower_components/jquery/dist/jquery.min.js")
+		script(src="bower_components/bootstrap/dist/js/bootstrap.min.js")
+		script(src="javascript/layer/layer.js")
+		script(src="javascript/layer/mine.js")

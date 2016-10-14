@@ -1,0 +1,32 @@
+doctype
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, inital-scale=1.0,maximum-scale=1.0,user-scalable=no")
+		meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
+		title 乐餐吧———美食列表
+		link(href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet")
+		link(href="/stylesheets/style.css" rel="stylesheet" type="text/css")
+		script(type="text/javascript" src="../../javascripts/browserChecker.js")
+	body(style="font-size:12px")
+		.container
+			.row
+				div.col-lg-4.col-md-4.col-sm-12.col-xs-12.hidden-sm.hidden-xs
+				div.col-lg-4.col-md-4.col-sm-12.col-xs-12
+					div.panel.panel-default
+						div.panel-heading
+							div.h1.text-center 乐餐吧
+						div.text-center(style="padding-top: 40px; padding-bottom: 40px")
+							img(src="/images/success.png" style="width: 100px")
+							div.h1 提交成功
+							div.h4
+								span 总价
+								span#totalPrice
+								span 元
+							div#dishes(style="font-size: 14px; color: #c72323")
+							a.btn.btn-success(href="/" style="width: 70%; margin-top: 30px") 确定
+				div.col-lg-4.col-md-4.col-sm-12.col-xs-12.hidden-sm.hidden-xs
+		script(src="../../bower_components/jquery/dist/jquery.min.js")
+		script(src="../../bower_components/bootstrap/dist/js/bootstrap.min.js")
+		script(src="../../javascript/layer/layer.js")
+		script(src="../../javascript/dishes-success.js")

@@ -1,0 +1,35 @@
+doctype
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, inital-scale=1.0,maximum-scale=1.0,user-scalable=no")
+		meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
+		title 乐餐吧———餐馆列表
+		link(href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet")
+		link(href="/stylesheets/style.css" rel="stylesheet" type="text/css")
+		script(type="text/javascript" src="/javascripts/browserChecker.js")
+	body(style="font-size:12px")
+		.container
+			div.row(style="margin-top:5px")
+				div.col-lg-4.col-md-4.col-sm-12.col-xs-12.hidden-sm.hidden-xs
+				div.col-lg-4.col-md-4.col-sm-12.col-xs-12
+					div.panel.panel-default
+						div.panel-heading.text-center
+							div.h1(style="display: inline-block;") 乐餐吧
+							a(href="/mine")
+								img(src="/images/user_default_icon.png" class="img-circle pull-right" style="width: 40px; margin-top: 10px")
+						div(style="padding:15px") 加班美食供应商
+						ul.list-group
+							each item in restaurantList
+								li.list-group-item
+									a(href="/dishes/list/#{item.id}")
+										div.common_item
+											img.ima-responsive.img-rounded(src="#{item.icon}",style="width:100px; height: 100px")
+											div.common_item_right(style="height:100px")
+												div.common_item_right_title #{item.name}
+												div.common_item_right_summary #{item.phoneNumber}
+				div.col-lg-4.col-md-4.col-sm-12.col-xs-12.hidden-sm.hidden-xs
+		script(src="bower_components/jquery/dist/jquery.min.js")
+		script(src="bower_components/bootstrap/dist/js/bootstrap.min.js")
+
+					
